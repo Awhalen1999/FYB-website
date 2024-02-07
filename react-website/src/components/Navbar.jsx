@@ -44,12 +44,16 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <button className='booking-button-temp'>Book an Appointment</button>
+          </li>
         </ul>
       </div>
       <div className='dropdown'>
         <button className='nav-button' onClick={toggleMenu}>
           {isOpen ? <SlArrowUp size={30} /> : <SlMenu size={30} />}
         </button>
+        <button className='booking-button-temp'>Book an Appointment</button>
         {isOpen && (
           <div className='dropdown-menu'>
             <ul>
