@@ -11,7 +11,6 @@ const Navbar = () => {
 
   return (
     <nav>
-      {' '}
       <div>
         <a href='#top'>
           <img src='http://via.placeholder.com/100x100' alt='Company Logo' />
@@ -53,7 +52,6 @@ const Navbar = () => {
         <button className='nav-button' onClick={toggleMenu}>
           {isOpen ? <SlArrowUp size={30} /> : <SlMenu size={30} />}
         </button>
-        <button className='booking-button-temp'>Book an Appointment</button>
         {isOpen && (
           <div className='dropdown-menu'>
             <ul>
