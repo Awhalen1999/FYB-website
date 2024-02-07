@@ -13,7 +13,10 @@ const Navbar = () => {
     <nav>
       <div>
         <a href='#top'>
-          <img src='http://via.placeholder.com/100x100' alt='Company Logo' />
+          <img
+            src='./assets/FindYourBalance-Logo-BG-Remove.png'
+            alt='Company Logo'
+          />
         </a>
       </div>
       <div className='navbar'>
