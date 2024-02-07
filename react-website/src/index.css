@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-background-color: #ffffffff;
+  --headline-text-color: #00182b;
+  --paragraph-text-color: #00182b;
+  --button-color: #ffd803ff;
+  --button-text-color: #ffffffff;
+  --highlight-color: #a4ffffff;
+  --primary-color: #70b445ff;
+  --secondary-color: #2093a3ff;
+  --tertiary-color: #487c97ff;
+  --font-family: 'Rokkitt', Arial, sans-serif;
+  --base-line-height: 1.5;
+  --base-font-size: 16px;
+  --large-font-size: 2rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
