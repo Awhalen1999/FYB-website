@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { SlMenu, SlArrowUp } from 'react-icons/sl';
+import logo from '../assets/FindYourBalance-Logo-BG-Remove.png';
 
-const Navbar = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,10 +14,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href='#top'>
-          <img
-            src='./assets/FindYourBalance-Logo-BG-Remove.png'
-            alt='Company Logo'
-          />
+          <img className='logo' src={logo} alt='Company Logo' />
         </a>
       </div>
       <div className='navbar'>
@@ -91,4 +89,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav;

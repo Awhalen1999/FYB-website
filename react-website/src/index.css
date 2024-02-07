@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 /* change font family */
-/* change font size with media query */
+/* change font and image size with media query */
 
 :root {
   --primary-background-color: #ffffffff;
@@ -36,7 +36,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: var(--base-font-size);
 }
 
@@ -100,6 +100,11 @@ nav button {
   .dropdown {
     display: flex;
   }
+}
+
+.logo {
+  width: 100px;
+  height: auto;
 }
 
 /* temp button styling */
