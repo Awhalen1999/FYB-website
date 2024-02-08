@@ -10,6 +10,8 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
 
+  const menuItems = ['1', '2', '3'];
+
   return (
     <nav>
       <div>
@@ -21,70 +23,20 @@ const Nav = () => {
           />
         </a>
       </div>
-      <div className='navbar'>
-        <ul>
-          <li>
-            <Link to='about' smooth={true} duration={1000}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to='why' smooth={true} duration={1000}>
-              Why
-            </Link>
-          </li>
-          <li>
-            <Link to='steps' smooth={true} duration={1000}>
-              Steps
-            </Link>
-          </li>
-          <li>
-            <Link to='services' smooth={true} duration={1000}>
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link to='contact' smooth={true} duration={1000}>
-              Contact
-            </Link>
-          </li>
-          <li>
-            <button className='booking-button-temp'>Book an Appointment</button>
-          </li>
-        </ul>
-      </div>
-      <div className='dropdown'>
-        <button className='nav-button' onClick={toggleMenu}>
-          {isOpen ? <SlArrowUp size={30} /> : <SlMenu size={30} />}
+      <div className='dropdown-container'>
+        <button className='menu-button' onClick={toggleMenu}>
+          {isOpen ? <SlArrowUp /> : <SlMenu />}
         </button>
         {isOpen && (
-          <div className='dropdown-menu'>
+          <div className='dropdown'>
             <ul>
-              <li>
-                <Link to='about' smooth={true} duration={1000}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to='why' smooth={true} duration={1000}>
-                  Why
-                </Link>
-              </li>
-              <li>
-                <Link to='steps' smooth={true} duration={1000}>
-                  Steps
-                </Link>
-              </li>
-              <li>
-                <Link to='services' smooth={true} duration={1000}>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to='contact' smooth={true} duration={1000}>
-                  Contact
-                </Link>
-              </li>
+              {menuItems.map((item) => (
+                <li key={item}>
+                  <Link to={item} smooth={true} duration={1000}>
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         )}

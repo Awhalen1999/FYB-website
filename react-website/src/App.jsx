@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import Benefits from './components/Benefits/Benefits';
@@ -14,7 +13,6 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div>
-      <Header />
       <Nav />
       <Hero />
       <Benefits />
