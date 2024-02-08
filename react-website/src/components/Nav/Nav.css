@@ -1,6 +1,9 @@
 nav {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-sizing: border-box;
 }
 
 .nav-container {
@@ -8,19 +11,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 25px 70px;
-  font-size: var(--base-font-size);
 }
 
 .nav-button {
   background: none;
   border: none;
   cursor: pointer;
-  color: rgb(219, 219, 219);
+  color: #f5f5dc;
 }
 
 .logo {
   height: 100px;
-  width: auto;
 }
 
 .nav-dropdown {
@@ -29,18 +30,17 @@ nav {
   right: 70px;
   top: 75px;
   box-shadow: var(--box-shadow);
-  background-color: #f8f9fa;
+  background-color: #f5f5dc;
   padding: 10px;
   border-radius: 10px;
   width: 100px;
 }
 
 .nav-dropdown li {
-  display: block;
   padding: 5px 10px;
 }
 
 .nav-dropdown li:hover {
-  background-color: #d5d6d7;
+  background-color: #d9d9c3;
   border-radius: 10px;
 }

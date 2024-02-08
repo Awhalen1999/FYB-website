@@ -1,0 +1,60 @@
+/* change gradient color */
+
+.item-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgb(212, 255, 185),
+    rgb(212, 250, 255)
+  );
+}
+
+.item-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: -50px auto 0;
+  border: 3px solid black;
+  border-radius: 20px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+  background-color: #f5f5dc;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.item-section {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.learn-more-button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 15px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--font-family-p);
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-section-container.visible {
+  opacity: 1;
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-/* change font family */
+/* change button color */
 /* change font and image size with media query */
 
 :root {
@@ -30,6 +30,22 @@ body {
   line-height: var(--base-line-height);
   background-color: var(--primary-background-color);
   color: var(--paragraph-text-color);
-  margin: 0; /* remove the default margin */
-  padding: 0; /* remove the default padding */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-face-color: rgb(95, 95, 95);
+  scrollbar-track-color: rgb(50, 50, 50);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(50, 50, 50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(95, 95, 95);
+  border-radius: 15px;
 }
