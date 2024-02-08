@@ -28,4 +28,5 @@ body {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   background-color: var(--primary-background-color);
+  color: var(--paragraph-text-color);
 }
