@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { SlMenu, SlArrowUp } from 'react-icons/sl';
-import logo from '../assets/FindYourBalance-Logo-BG-Remove.png';
+import './Nav.css';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,11 @@ const Nav = () => {
     <nav>
       <div>
         <a href='#top'>
-          <img className='logo' src={logo} alt='Company Logo' />
+          <img
+            className='logo'
+            src='https://via.placeholder.com/100'
+            alt='Company Logo'
+          />
         </a>
       </div>
       <div className='navbar'>
