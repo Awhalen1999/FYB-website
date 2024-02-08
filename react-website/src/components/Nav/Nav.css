@@ -1,22 +1,33 @@
 nav {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 25px 70px;
   font-size: var(--base-font-size);
 }
 
-nav button {
+.nav-button {
   background: none;
   border: none;
   cursor: pointer;
+  color: rgb(219, 219, 219);
 }
 
-.dropdown ul {
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.nav-dropdown {
   list-style: none;
   position: absolute;
-  right: 100px;
-  top: 60px;
+  right: 70px;
+  top: 75px;
   box-shadow: var(--box-shadow);
   background-color: #f8f9fa;
   padding: 10px;
@@ -24,24 +35,12 @@ nav button {
   width: 100px;
 }
 
-.dropdown li {
+.nav-dropdown li {
   display: block;
-  padding: 5px 10px; /* adjusted padding */
+  padding: 5px 10px;
 }
 
-.dropdown li:hover {
-  background-color: #e9ecef;
+.nav-dropdown li:hover {
+  background-color: #d5d6d7;
   border-radius: 10px;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-}
-
-.menu-button {
-  font-size: 24px;
-  position: fixed;
-  top: 50px;
-  right: 150px;
 }

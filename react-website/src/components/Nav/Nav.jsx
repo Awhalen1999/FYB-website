@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { SlMenu, SlArrowUp } from 'react-icons/sl';
 import './Nav.css';
+import logoImage from '../../assets/FindYourBalance-Logo-BG-Remove.png';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,32 +14,26 @@ const Nav = () => {
   const menuItems = ['1', '2', '3'];
 
   return (
-    <nav>
+    <nav className='nav-container'>
       <div>
         <a href='#top'>
-          <img
-            className='logo'
-            src='https://via.placeholder.com/100'
-            alt='Company Logo'
-          />
+          <img className='logo' src={logoImage} alt='Company Logo' />
         </a>
       </div>
-      <div className='dropdown-container'>
-        <button className='menu-button' onClick={toggleMenu}>
-          {isOpen ? <SlArrowUp /> : <SlMenu />}
+      <div>
+        <button className='nav-button' onClick={toggleMenu}>
+          {isOpen ? <SlArrowUp size='3em' /> : <SlMenu size='3em' />}
         </button>
         {isOpen && (
-          <div className='dropdown'>
-            <ul>
-              {menuItems.map((item) => (
-                <li key={item}>
-                  <Link to={item} smooth={true} duration={1000}>
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className='nav-dropdown'>
+            {menuItems.map((item) => (
+              <li key={item}>
+                <Link to={item} smooth={true} duration={1000}>
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
     </nav>

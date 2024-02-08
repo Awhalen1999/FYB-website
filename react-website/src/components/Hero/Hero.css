@@ -1,0 +1,47 @@
+.hero {
+  position: absolute; /* make the position absolute */
+  top: 0; /* position it at the top of the screen */
+  width: 100%; /* make it span the full width of the screen */
+  background-size: cover; /* cover the entire div */
+  background-position: center; /* center the image */
+  height: 100vh; /* make the hero section the full height of the viewport */
+}
+
+.hero-content {
+  position: absolute;
+  right: 45%;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 50vw;
+}
+
+.hero-title-1 {
+  font-family: var(--font-family-h);
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 0px; /* set the margin-bottom to 5px */
+}
+
+.hero-title-2 {
+  font-family: var(--font-family-h);
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 15px; /* set the margin-bottom to 5px */
+  margin-top: 0; /* remove the margin-top */
+}
+
+.hero-subtitle {
+  font-family: var(--font-family-p);
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 5px; /* remove the margin-top */
+}
+
+.hero-button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px; /* round the edges */
+}
