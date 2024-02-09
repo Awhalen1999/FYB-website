@@ -4,7 +4,8 @@
 /* change font and image size with media query */
 
 :root {
-  --primary-background-color: #ffffffff;
+  --primary-background-color: #f5f5dc;
+  --secondary-background-color: #fcfcf0;
   --headline-text-color: #00182b;
   --paragraph-text-color: #00182b;
   --button-color: rgb(255, 217, 3);

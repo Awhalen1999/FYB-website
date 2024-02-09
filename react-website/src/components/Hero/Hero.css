@@ -50,3 +50,17 @@
   font-weight: 500;
   border-radius: 20px;
 }
+
+.hero-content {
+  position: absolute;
+  right: 45%;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 50vw;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.loaded .hero-content {
+  opacity: 1;
+}

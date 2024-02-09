@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { SlMenu, SlArrowUp } from 'react-icons/sl';
 import './Nav.css';
-import logoImage from '../../assets/FindYourBalance-Logo-BG-Remove.png';
+import logoImage from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
