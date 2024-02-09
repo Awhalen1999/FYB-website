@@ -4,13 +4,16 @@ import { SlMenu, SlArrowUp } from 'react-icons/sl';
 import './Nav.css';
 import logoImage from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
 
+const MenuItem = ({ item }) => (
+  <li>
+    <Link to={item} smooth={true} duration={1000}>
+      {item}
+    </Link>
+  </li>
+);
+
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const menuItems = ['1', '2', '3'];
 
   return (
@@ -21,17 +24,13 @@ const Nav = () => {
         </a>
       </div>
       <div>
-        <button className='nav-button' onClick={toggleMenu}>
+        <button className='nav-button' onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <SlArrowUp size='3em' /> : <SlMenu size='3em' />}
         </button>
         {isOpen && (
           <ul className='nav-dropdown'>
-            {menuItems.map((item) => (
-              <li key={item}>
-                <Link to={item} smooth={true} duration={1000}>
-                  {item}
-                </Link>
-              </li>
+            {menuItems.map((item, index) => (
+              <MenuItem key={index} item={item} />
             ))}
           </ul>
         )}

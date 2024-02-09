@@ -3,6 +3,7 @@ import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import Benefits from './components/Benefits/Benefits';
 import About from './components/About/About';
+import ContentBanner from './components/ContentBanner/ContentBanner';
 import Content from './components/Content/Content';
 import Steps from './components/Steps/Steps';
 import Services from './components/Services/Services';
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Benefits />
       <About />
+      <ContentBanner />
       <Content />
       <Steps />
       <Services />

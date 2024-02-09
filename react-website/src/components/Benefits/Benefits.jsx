@@ -2,6 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './Benefits.css';
 import { TfiCheckBox } from 'react-icons/tfi';
 
+const Section = ({ text }) => (
+  <div className='item-section'>
+    <div className='item-content'>
+      <TfiCheckBox size={40} />
+      <p>{text}</p>
+    </div>
+  </div>
+);
+
 const Benefits = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -12,11 +21,7 @@ const Benefits = () => {
   ];
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 25) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    setIsVisible(window.scrollY > 25);
   };
 
   useEffect(() => {
@@ -28,12 +33,7 @@ const Benefits = () => {
     <div className='item-box'>
       <div className={`item-section-container ${isVisible ? 'visible' : ''}`}>
         {sections.map((section, index) => (
-          <div key={index} className='item-section'>
-            <div className='item-content'>
-              <TfiCheckBox size={40} />
-              <p>{section}</p>
-            </div>
-          </div>
+          <Section key={index} text={section} />
         ))}
       </div>
       <button className='learn-more-button'>LEARN MORE</button>

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Hero.css';
 import heroImage from '../../assets/hero-image.png';
 
-window.onload = function () {
-  document.body.classList.add('loaded');
-};
-
 const Hero = () => {
+  useEffect(() => {
+    document.body.classList.add('loaded');
+  }, []);
+
   return (
     <div className='hero' style={{ backgroundImage: `url(${heroImage})` }}>
       <div className='hero-content'>
