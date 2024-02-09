@@ -5,7 +5,6 @@ import Benefits from './components/Benefits/Benefits';
 import About from './components/About/About';
 import ContentBanner from './components/ContentBanner/ContentBanner';
 import Content from './components/Content/Content';
-import Steps from './components/Steps/Steps';
 import Services from './components/Services/Services';
 import CTA from './components/CTA/CTA';
 import Contact from './components/Contact/Contact';
@@ -20,7 +19,6 @@ function App() {
       <About />
       <ContentBanner />
       <Content />
-      <Steps />
       <Services />
       <CTA />
       <Contact />
