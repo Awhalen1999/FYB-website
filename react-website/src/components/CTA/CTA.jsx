@@ -1,7 +1,7 @@
 import React from 'react';
 import './CTA.css';
 import CTAImage from '../../assets/CTA-image.png';
-import LogoImage from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
+import LogoImage from '../../assets/FindYourBalance-Logo-BG-Remove.png';
 
 const CTA = () => (
   <div className='cta' style={{ backgroundImage: `url(${CTAImage})` }}>
