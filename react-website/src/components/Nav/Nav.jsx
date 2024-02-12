@@ -14,7 +14,7 @@ const MenuItem = ({ item }) => (
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuItems = ['1', '2', '3'];
+  const menuItems = ['About', 'Learn more', 'Services', 'Contact me']; // replace with your section IDs
 
   return (
     <nav className='nav-container'>

@@ -16,7 +16,7 @@ const ContactInfo = ({ IconComponent, text }) => (
 );
 
 const Contact = () => (
-  <div className='contact'>
+  <div id='Contact me' className='contact'>
     <div className='contact-left'>
       <img src={LogoImage} alt='Logo' className='contact-logo' />
       <h1>Get in touch</h1>

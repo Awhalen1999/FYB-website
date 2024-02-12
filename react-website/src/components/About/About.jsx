@@ -12,14 +12,15 @@ const About = () => {
   ];
 
   return (
-    <div className='about-container'>
+    <div id='About' className='about-container'>
       <div className='about-text'>
         <h1 className='about-heading-1'>Being in pain is no fun!</h1>
         <h2 className='about-heading-2'>That's why I'm here to help.</h2>
         {paragraphs.map((paragraph, index) => (
           <Paragraph key={index} text={paragraph} />
         ))}
-        <button className='placeholder-button'>VIEW TREATMENT OPTIONS</button>
+        <button className='about-button'>VIEW TREATMENT OPTIONS</button>
+        <button className='about-button'>CONTACT ME</button>
       </div>
       <img src={profilePicture} alt='Profile' className='profile-picture' />
     </div>

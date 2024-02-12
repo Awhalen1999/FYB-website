@@ -1,17 +1,18 @@
 .content-banner {
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 75px;
 }
 
 .item-box-2 {
-  background-color: var(--primary-background-color);
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 75px;
+  color: var(--tertiary-text-color);
+  margin-top: 50px;
 }
 
 .sections-container {
@@ -29,9 +30,9 @@
 .content-banner-header {
   font-family: var(--font-family-h);
   font-size: 3rem;
-  color: #14544e;
   font-weight: 800;
   margin-bottom: 50px;
+  color: var(--tertiary-text-color);
 }
 
 .icon {
@@ -40,7 +41,7 @@
 
 .content-banner-text {
   font-family: var(--font-family-p);
-  color: #14544e;
+  color: var(--tertiary-text-color);
   line-height: 1.5;
   font-size: 1.2rem;
   font-weight: 500;

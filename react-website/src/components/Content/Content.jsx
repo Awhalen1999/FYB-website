@@ -26,23 +26,25 @@ const Body = () => {
   ];
 
   return (
-    <div className='content'>
-      <p className='content-main'>
-        <strong>Myofascial release massage therapy</strong> is a specialized
-        form of massage that focuses on the fascia, a connective tissue that
-        surrounds and supports muscles, bones, and organs throughout the body.
-        The fascia can become tight, restricted, or damaged due to factors such
-        as stress, injury, poor posture, or inflammation, leading to pain and
-        discomfort.
-      </p>
-      <div className='sections-wrapper'>
-        {sections.map((group, index) => (
-          <div key={index} className='content-group'>
-            {group.map((section, index) => (
-              <Section key={index} text={section} />
-            ))}
-          </div>
-        ))}
+    <div className='content-container'>
+      <div className='content'>
+        <p className='content-main'>
+          <strong>Myofascial release massage therapy</strong> is a specialized
+          form of massage that focuses on the fascia, a connective tissue that
+          surrounds and supports muscles, bones, and organs throughout the body.
+          The fascia can become tight, restricted, or damaged due to factors
+          such as stress, injury, poor posture, or inflammation, leading to pain
+          and discomfort.
+        </p>
+        <div className='sections-wrapper'>
+          {sections.map((group, index) => (
+            <div key={index} className='content-group'>
+              {group.map((section, index) => (
+                <Section key={index} text={section} />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

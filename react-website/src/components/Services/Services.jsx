@@ -1,27 +1,32 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Services.css';
-import ServicesImage from '../../assets/services-image.png';
+import placeholderImage from '../../assets/placeholder.png';
 
-const ServicesText = () => (
-  <div className='services-text'>
-    <h2>Registered Massage Therapy/Specializing in Myofascial Release</h2>
-    <p>
-      Enhance your body's natural healing process, feel the difference as your
-      range of motion improves, stress and tension decrease, and your overall
-      sense of well-being is elevated. Experience increased blood flow, reduced
-      pain, and inflammation.
-    </p>
-    <button className='services-button'>BOOK AN APPOINTMENT</button>
+const ServiceCard = ({ title }) => (
+  <div className='service-card'>
+    <img src={placeholderImage} alt={title} className='service-card-image' />
+    <h3 className='service-card-title'>{title}</h3>
   </div>
 );
 
 const Services = () => (
-  <div className='services'>
+  <div id='Services' className='services'>
     <h1>Services</h1>
-    <div className='services-content'>
-      <img src={ServicesImage} alt='Services' className='services-image' />
-      <ServicesText />
-    </div>
+    <Carousel
+      showThumbs={false}
+      showStatus={false}
+      showIndicators={false}
+      centerMode
+      centerSlidePercentage={50}
+    >
+      <ServiceCard title='Service 1' />
+      <ServiceCard title='Service 2' />
+      <ServiceCard title='Service 3' />
+      <ServiceCard title='Service 4' />
+      <ServiceCard title='Service 5' />
+    </Carousel>
   </div>
 );
 

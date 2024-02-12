@@ -12,7 +12,7 @@ const Section = ({ icon, alt, text }) => (
 );
 
 const ContentBanner = () => (
-  <div className='content-banner'>
+  <div id='Learn more' className='content-banner'>
     <div className='item-box-2'>
       <h1 className='content-banner-header'>The complete care package</h1>
       <div className='sections-container'>
