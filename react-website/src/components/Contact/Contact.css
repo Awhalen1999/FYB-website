@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(112, 180, 69, 0.35),
+    rgba(32, 148, 163, 0.35)
+  );
+  padding-bottom: 50px;
+}
+
+.contact-left,
+.contact-right {
+  width: 45%;
+  padding: 25px 50px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-right div,
+.contact-left div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 450;
+}
+
+.contact-right div svg,
+.contact-left div svg {
+  font-size: 24px;
+}
+
+.contact-right button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 450;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--primary-text-color);
+  font-family: var(--font-family-p);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-right button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.contact-right button svg {
+  font-size: 24px;
+}
+
+.contact-logo {
+  height: 100px;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-h);
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-family: var(--font-family-p);
+  color: var(--primary-text-color);
+}
