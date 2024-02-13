@@ -1,0 +1,13 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.ContentBanner {
+  flex: 1;
+}
+
+.Content {
+  flex: 2;
+}
