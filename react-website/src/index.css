@@ -10,7 +10,8 @@
   --primary-text-color: #00182b;
   --secondary-text-color: #14544e;
   --tertiary-text-color: #f5f5dc;
-  --button-color: rgb(255, 217, 3); /* change button color */
+  --button-color: #339cff;
+  --button-hover-color: #2595ff;
   --button-text-color: #00182b;
   --highlight-color: #a4ffffff;
   --primary-color: #70b445ff;
