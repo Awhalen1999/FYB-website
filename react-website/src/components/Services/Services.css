@@ -5,7 +5,13 @@
   align-items: center;
   height: 100vh;
   text-align: center;
+  width: 100%;
+  background-image: url('../../assets/background-2.png');
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: left;
 }
+
 .services h1 {
   margin-bottom: 20px;
   margin-top: 50px;
