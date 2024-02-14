@@ -1,18 +1,19 @@
 nav {
   position: absolute;
   z-index: 2;
-  width: 90%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  color: var(--secondary-text-color);
+  font-family: var(--font-family-p);
+  font-weight: 450;
+  box-sizing: border-box;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 50px;
-  background-color: rgba(225, 225, 225, 0.15);
   margin: 10px;
+  padding: 0 40px; /* adjust as needed */
 }
 
 .menu-container {
@@ -28,6 +29,14 @@ nav {
 
 .nav-dropdown li {
   margin-right: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-dropdown li:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-text-color);
 }
 
 .nav-button {

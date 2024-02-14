@@ -15,7 +15,8 @@ const Hero = () => {
         <p className='hero-subtitle'>
           With myofascial Release Registered Massage Therapy
         </p>
-        <button className='hero-button'>BOOK AN APPOINTMENT</button>
+        <button className='hero-button-1'>BOOK AN APPOINTMENT</button>
+        <button className='hero-button-2'>LEARN MORE</button>
       </div>
     </div>
   );
