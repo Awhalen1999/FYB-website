@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-/* change button color */
-/* change font and image size with media query */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* change button color */ /* change font and image size with media query */
 :root {
   --primary-background-color: #f5f5dc;
   --secondary-background-color: #082320;
@@ -18,9 +16,8 @@
   --primary-color: #70b445ff;
   --secondary-color: #2093a3ff;
   --tertiary-color: #487c97ff;
-  --font-family-h: 'Crimson Pro', Arial, sans-serif;
-  --font-family-p: 'Montserrat', Arial, sans-serif;
-  --base-font-size: 18px;
+  --font-family-h: 'Inter', Arial, sans-serif;
+  --font-family-p: 'Poppins', Arial, sans-serif;
   --large-font-size: 2rem;
   --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
