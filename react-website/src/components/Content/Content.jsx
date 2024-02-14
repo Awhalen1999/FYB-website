@@ -16,11 +16,11 @@ const Body = () => {
     [
       "Your body's natural healing process will get a boost",
       'Experience an improved range of motion',
-      'Stress and tension decreases',
+      'Stress and muscle tension decreases',
     ],
     [
       'Enjoy an improved sense of wellbeing',
-      "Your body's blood flow increases",
+      'Improve circulation & organ function',
       'Pain and inflammation reduces',
     ],
   ];
