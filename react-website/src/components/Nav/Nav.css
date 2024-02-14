@@ -13,28 +13,27 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  padding: 0 50px; /* adjust as needed */
+  padding: 0 50px;
 }
 
 .menu-container {
   display: flex;
 }
 
-.nav-dropdown {
+.desktop-menu {
   list-style: none;
   padding: 0;
   display: flex;
   align-items: center;
 }
 
-.nav-dropdown li {
-  margin: 0; /* remove the right margin */
+.desktop-menu li {
   border-radius: 20px;
-  padding: 15px 40px; /* adjust the padding */
+  padding: 15px 40px;
   cursor: pointer;
 }
 
-.nav-dropdown li:hover {
+.desktop-menu li:hover {
   background-color: var(--hover-color);
   color: var(--primary-text-color);
 }
@@ -54,50 +53,6 @@ nav {
 
 .mobile-menu {
   display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-
-  .nav-dropdown {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 25%;
-    flex-direction: column;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-  }
-
-  .nav-dropdown.open {
-    display: flex;
-  }
-
-  .nav-button {
-    display: inline-block;
-    position: relative;
-    color: black;
-    background: transparent;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  .nav-dropdown li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
 }
 
 .logo {

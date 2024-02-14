@@ -5,6 +5,7 @@ const ServiceCard = ({ title }) => (
   <div className='service-card'>
     <img src={ServicesImage} alt={title} className='service-card-image' />
     <h2 className='service-card-title'>{title}</h2>
+    <div className='service-div'></div>
     <p className='service-card-text'>
       Enhance your body's natural healing process, feel the difference as your
       range of motion improves, stress and tension decrease, and your overall

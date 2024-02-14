@@ -13,8 +13,8 @@
 }
 
 .services h1 {
-  margin-bottom: 20px;
-  margin-top: 50px;
+  margin-bottom: 0px; /* Decrease this value */
+  margin-top: 40px;
 }
 
 .cards-container {
@@ -48,7 +48,7 @@
 
 .service-card:hover {
   /* Add hover shadow and scale effect */
-  box-shadow: rgba(51, 156, 255, 0.175) -10px 10px,
+  box-shadow: rgba(51, 156, 255, 0.25) -10px 10px,
     rgba(51, 156, 255, 0.175) -20px 20px;
   transform: scale(1.1);
 }
@@ -73,10 +73,19 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #000;
+  background-color: var(--primary-text-color);
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .service-card:hover {
   transform: scale(1.1);
+}
+
+.service-div {
+  width: 75%;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 5px 0;
+  border-radius: 10px;
 }

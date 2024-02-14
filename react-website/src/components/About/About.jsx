@@ -18,7 +18,7 @@ const About = () => {
           <h3 className='about-subheading'>
             A registered massage therapist specializing in myofascial release.
           </h3>
-          <div className='primary-div'></div>
+          <div className='about-div'></div>
           {paragraphs.map((paragraph, index) => (
             <Paragraph key={index} text={paragraph} />
           ))}
