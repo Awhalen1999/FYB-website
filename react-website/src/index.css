@@ -2,23 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* change button color */ /* change font and image size with media query */
 :root {
-  --primary-background-color: #f5f5dc;
-  --secondary-background-color: #082320;
-  --tertiary-background-color: #fcfcf0;
-  --primary-text-color: #00182b;
+  --primary-background-color: #faf9f6;
+  --secondary-background-color: #399cff;
+  --primary-text-color: #000000;
   --secondary-text-color: #faf9f6;
-  --tertiary-text-color: #f5f5dc;
+  --tertiary-text-color: #339cff;
   --hover-color: #2595ff;
   --button-color: #339cff;
   --button-hover-color: #2595ff;
-  --button-text-color: #00182b;
-  --highlight-color: #a4ffffff;
+  --button-text-color: #000000;
+  --highlight-color: rgb(252, 252, 56);
   --primary-color: #70b445ff;
   --secondary-color: #2093a3ff;
   --tertiary-color: #487c97ff;
   --font-family-h: 'Inter', Arial, sans-serif;
   --font-family-p: 'Poppins', Arial, sans-serif;
-  --large-font-size: 2rem;
   --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 

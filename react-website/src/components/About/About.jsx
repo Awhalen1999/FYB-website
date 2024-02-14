@@ -12,7 +12,7 @@ const About = () => {
   ];
 
   return (
-    <div id='About' className='about-container'>
+    <div id='About me' className='about-container'>
       <div className='about-text'>
         <h1 className='about-heading-1'>Being in pain is no fun!</h1>
         <h2 className='about-heading-2'>That's why I'm here to help.</h2>

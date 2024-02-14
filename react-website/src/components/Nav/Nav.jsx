@@ -20,7 +20,7 @@ const DesktopMenu = ({ menuItems }) => (
 );
 
 const Nav = () => {
-  const menuItems = ['About', 'Learn more', 'Services', 'Contact me'];
+  const menuItems = ['About me', 'Learn more', 'Services', 'Contact me'];
 
   return (
     <nav className='nav-container'>

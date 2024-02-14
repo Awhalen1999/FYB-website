@@ -16,7 +16,16 @@ const Hero = () => {
           With myofascial Release Registered Massage Therapy
         </p>
         <button className='hero-button-1'>BOOK AN APPOINTMENT</button>
-        <button className='hero-button-2'>LEARN MORE</button>
+        <button
+          className='hero-button-2'
+          onClick={() =>
+            document
+              .getElementById('Learn more')
+              .scrollIntoView({ behavior: 'smooth' })
+          }
+        >
+          LEARN MORE
+        </button>
       </div>
     </div>
   );

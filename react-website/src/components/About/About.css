@@ -32,7 +32,7 @@
 .about-heading-1 {
   font-family: var(--font-family-h);
   font-size: 3.5rem;
-  color: #14544e;
+  color: var(--primary-text-color);
   font-weight: 800;
   margin-bottom: 0;
 }
@@ -40,7 +40,7 @@
 .about-heading-2 {
   font-family: var(--font-family-h);
   font-size: 2.5rem;
-  color: #14544e;
+  color: var(--primary-text-color);
   font-weight: 800;
   margin-top: 5px;
   margin-bottom: 35px;
@@ -48,7 +48,7 @@
 
 .about-body {
   font-family: var(--font-family-p);
-  color: #14544e;
+  color: var(--primary-text-color);
   line-height: 1.5;
   font-size: 1.2rem;
   font-weight: 450;
