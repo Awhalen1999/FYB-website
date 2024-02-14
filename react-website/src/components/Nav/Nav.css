@@ -1,60 +1,100 @@
 nav {
   position: absolute;
-  z-index: 2;
+  top: 0;
   width: 100%;
-  color: var(--secondary-text-color);
-  font-family: var(--font-family-p);
-  font-weight: 400;
   box-sizing: border-box;
+  z-index: 2;
 }
 
-.nav-container {
+.navbar {
+  color: var(--secondary-text-color);
+  font-family: var(--font-family-p);
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
-  padding: 0 50px;
-}
-
-.menu-container {
-  display: flex;
-}
-
-.desktop-menu {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.desktop-menu li {
-  border-radius: 20px;
-  padding: 15px 40px;
-  cursor: pointer;
-}
-
-.desktop-menu li:hover {
-  background-color: var(--hover-color);
-  color: var(--primary-text-color);
-}
-
-.desktop-menu {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 0;
-  box-shadow: var(--box-shadow);
-}
-
-.nav-button {
-  display: none;
-  position: relative;
-}
-
-.mobile-menu {
-  display: none;
+  padding: 10px 50px;
 }
 
 .logo {
   height: 100px;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-menu li {
+  padding: 16px 28px;
+  cursor: pointer;
+}
+
+.desktop-menu li:hover {
+  background-color: var(--button-color);
+  border-radius: 25px;
+  color: var(--button-text-color);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: relative;
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.mobile-nav-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  list-style-type: none;
+  padding: 0;
+  background: var(--primary-text-color);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  display: none;
+}
+
+.mobile-nav-list li {
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.mobile-nav-list li:hover {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-nav-list {
+    display: block;
+  }
 }

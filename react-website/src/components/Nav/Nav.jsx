@@ -1,61 +1,50 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
 import './Nav.css';
-import logoImage from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import logo from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
+import { HiMenuAlt3 } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
 
-const MenuItem = ({ item }) => (
-  <Link to={item} smooth duration={1000}>
-    <li>{item}</li>
-  </Link>
-);
-
-const DesktopMenu = ({ menuItems }) => (
-  <ul className='desktop-menu'>
-    {menuItems.map((item, index) => (
-      <MenuItem key={index} item={item} />
-    ))}
-  </ul>
-);
-
-const MobileMenu = ({ menuItems, isOpen, toggleMenu }) => (
-  <div className='mobile-menu'>
-    <button className='nav-button' onClick={toggleMenu}>
-      <HiOutlineMenuAlt3 /> dropdown
-    </button>
-    {isOpen && (
-      <ul className='nav-dropdown'>
-        {menuItems.map((item, index) => (
-          <MenuItem key={index} item={item} />
-        ))}
-      </ul>
-    )}
-  </div>
-);
-
-const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const menuItems = ['About me', 'Learn more', 'Services', 'Contact me'];
+const NavBar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <nav className='nav-container'>
-      <div>
-        <img className='logo' src={logoImage} alt='Company Logo' />
-      </div>
-      <div className='menu-container'>
-        <DesktopMenu menuItems={menuItems} />
-        <MobileMenu
-          menuItems={menuItems}
-          isOpen={isOpen}
-          toggleMenu={toggleMenu}
-        />
+    <nav className='navbar'>
+      <div className='navbar-container'>
+        <img src={logo} alt='Logo' className='logo' />
+        {/* Desktop Menu */}
+        <div className='desktop-menu'>
+          <ul className='desktop-nav-list'>
+            <li onClick={() => scrollToSection('About me')}>About me</li>
+            <li onClick={() => scrollToSection('Learn more')}>Learn more</li>
+            <li onClick={() => scrollToSection('Services')}>Services</li>
+            <li onClick={() => scrollToSection('Contact me')}>Contact me</li>
+          </ul>
+        </div>
+        {/* Mobile Menu */}
+        <div className='mobile-menu'>
+          <button className='menu-toggle' onClick={toggleMenu}>
+            {isMenuOpen ? <IoClose /> : <HiMenuAlt3 />}
+          </button>
+          {isMenuOpen && (
+            <ul className='mobile-nav-list'>
+              <li onClick={() => scrollToSection('About')}>About</li>
+              <li onClick={() => scrollToSection('Learn more')}>Learn more</li>
+              <li onClick={() => scrollToSection('Services')}>Services</li>
+              <li onClick={() => scrollToSection('Contact me')}>Contact me</li>
+            </ul>
+          )}
+        </div>
       </div>
     </nav>
   );
 };
 
-export default Nav;
+export default NavBar;
