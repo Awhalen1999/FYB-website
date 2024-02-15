@@ -14,6 +14,21 @@ export const aboutText = {
     "I've been practicing therapeutic massage for 27 years. Every time a patient leaves my treatment room and tells me that they are feeling better, it gives me an immense sense of satisfaction.",
 };
 
+export const contentBannerText = {
+  header: 'The complete care package',
+  sections: [
+    {
+      text: 'Personalized care for optimal wellness',
+    },
+    {
+      text: 'Evidence-based treatment plans for lasting relief',
+    },
+    {
+      text: 'Natural and effective nourishment',
+    },
+  ],
+};
+
 export const contentText = {
   main: '<strong>Myofascial release massage therapy</strong> is a specialized form of massage that focuses on the fascia, a connective tissue that surrounds and supports muscles, bones, and organs throughout the body. The fascia can become tight, restricted, or damaged due to factors such as stress, injury, poor posture, or inflammation, leading to pain and discomfort.',
   sections: [

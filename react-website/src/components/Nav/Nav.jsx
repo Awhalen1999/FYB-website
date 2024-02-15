@@ -3,9 +3,11 @@ import './Nav.css';
 import logo from '../../assets/FindYourBalance-LogoPlusText-BG-Remove-2.png';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
+import { navText } from '../Text';
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const navItems = navText.navItems;
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -22,10 +24,11 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <div className='desktop-menu'>
           <ul className='desktop-nav-list'>
-            <li onClick={() => scrollToSection('About me')}>About me</li>
-            <li onClick={() => scrollToSection('Learn more')}>Learn more</li>
-            <li onClick={() => scrollToSection('Services')}>Services</li>
-            <li onClick={() => scrollToSection('Contact me')}>Contact me</li>
+            {navItems.map((item, index) => (
+              <li key={index} onClick={() => scrollToSection(item.id)}>
+                {item.name}
+              </li>
+            ))}
           </ul>
         </div>
         {/* Mobile Menu */}
@@ -35,10 +38,11 @@ const NavBar = () => {
           </button>
           {isMenuOpen && (
             <ul className='mobile-nav-list'>
-              <li onClick={() => scrollToSection('About')}>About</li>
-              <li onClick={() => scrollToSection('Learn more')}>Learn more</li>
-              <li onClick={() => scrollToSection('Services')}>Services</li>
-              <li onClick={() => scrollToSection('Contact me')}>Contact me</li>
+              {navItems.map((item, index) => (
+                <li key={index} onClick={() => scrollToSection(item.id)}>
+                  {item.name}
+                </li>
+              ))}
             </ul>
           )}
         </div>
