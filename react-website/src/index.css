@@ -5,17 +5,16 @@
 
 :root {
   --primary-background-color: #faf9f6;
-  --secondary-background-color: #2190aa;
-  --tertiary-background-color: #8e8e8e;
+  --secondary-background-color: #26a0bb;
   --primary-text-color: #333333;
   --secondary-text-color: #faf9f6;
   --tertiary-text-color: #339cff;
   --hover-color: #1c7f95;
-  --button-color: #2190aa;
+  --button-color: #26a0bb;
   --button-hover-color: #1c7f95;
   --button-text-color: black;
   --primary-color: #70b445;
-  --secondary-color: #2190aa;
+  --secondary-color: #26a0bb;
   --font-family-h: 'Lexend Deca', Arial, sans-serif;
   --font-family-p: 'Poppins', Arial, sans-serif;
   --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
