@@ -13,8 +13,9 @@
 }
 
 .services h1 {
-  margin-bottom: 0px; /* Decrease this value */
+  margin-bottom: 0px;
   margin-top: 40px;
+  font-family: var(--font-family-h);
 }
 
 .cards-container {

@@ -7,6 +7,7 @@ import {
   RiMapPin2Line,
   RiTimeLine,
 } from 'react-icons/ri';
+import { contactText } from '../Text';
 
 const ContactInfo = ({ IconComponent, text }) => (
   <div className='contact-info'>
@@ -19,23 +20,17 @@ const Contact = () => (
   <div id='Contact me' className='contact'>
     <div className='contact-left'>
       <img src={LogoImage} alt='Logo' className='contact-logo' />
-      <h2>Curious about massage services?</h2>
-      <h2>Reach out and let's chat!</h2>
+      <h2>{contactText.header1}</h2>
+      <h2>{contactText.header2}</h2>
     </div>
     <div className='contact-right'>
       <button className='contact-button'>
         <RiContactsLine />
         Contact Me
       </button>
-      <ContactInfo IconComponent={RiPhoneLine} text='(905) 960-4614' />
-      <ContactInfo
-        IconComponent={RiMapPin2Line}
-        text='18642 Leslie Street, East Gwillimbury, ON L0G 1V0'
-      />
-      <ContactInfo
-        IconComponent={RiTimeLine}
-        text='Office Hours: By appointment'
-      />
+      <ContactInfo IconComponent={RiPhoneLine} text={contactText.phone} />
+      <ContactInfo IconComponent={RiMapPin2Line} text={contactText.address} />
+      <ContactInfo IconComponent={RiTimeLine} text={contactText.hours} />
     </div>
   </div>
 );

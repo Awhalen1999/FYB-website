@@ -1,27 +1,18 @@
 import React from 'react';
 import './About.css';
 import profilePicture from '../../assets/profile-picture.png';
-
-const Paragraph = ({ text }) => <p className='about-body'>{text}</p>;
+import { aboutText } from '../Text';
 
 const About = () => {
-  const paragraphs = [
-    "I get it. Being in pain is not fun! That's why I became a massage therapist. Initially, my journey began as a means to manage my own pain, but over time, my focus shifted to assisting others in finding relief.",
-    "I've been practicing therapeutic massage for 27 years. Every time a patient leaves my treatment room and tells me that they are feeling better, it gives me an immense sense of satisfaction.",
-  ];
-
   return (
     <div id='About me' className='about-background'>
       <div className='about-container'>
         <div className='about-text'>
-          <h1 className='about-heading'>Hey there, I'm Alaina</h1>
-          <h3 className='about-subheading'>
-            A registered massage therapist specializing in myofascial release.
-          </h3>
+          <h1 className='about-heading'>{aboutText.heading}</h1>
+          <h3 className='about-subheading'>{aboutText.subheading}</h3>
           <div className='about-div'></div>
-          {paragraphs.map((paragraph, index) => (
-            <Paragraph key={index} text={paragraph} />
-          ))}
+          <p className='about-body'>{aboutText.paragraph1}</p>
+          <p className='about-body'>{aboutText.paragraph2}</p>
           <button
             className='about-button'
             onClick={() =>
