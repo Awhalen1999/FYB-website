@@ -1,9 +1,5 @@
 .footer {
-  background: linear-gradient(
-    to right,
-    rgba(112, 180, 69, 0.35),
-    rgba(32, 148, 163, 0.35)
-  );
+  background-color: var(--primary-background-color);
   text-align: center;
   padding-bottom: 8px;
   font-weight: 450;

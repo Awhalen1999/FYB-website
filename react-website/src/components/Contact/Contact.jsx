@@ -19,8 +19,7 @@ const Contact = () => (
   <div id='Contact me' className='contact'>
     <div className='contact-left'>
       <img src={LogoImage} alt='Logo' className='contact-logo' />
-      <h1>Get in touch</h1>
-      <h2>Curious about our massage services?</h2>
+      <h2>Curious about massage services?</h2>
       <h2>Reach out and let's chat!</h2>
     </div>
     <div className='contact-right'>

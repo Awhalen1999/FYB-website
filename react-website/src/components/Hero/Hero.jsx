@@ -12,6 +12,7 @@ const Hero = () => {
       <div className='hero-content'>
         <h1 className='hero-title-1'>Relieve pain,</h1>
         <h1 className='hero-title-2'>Embrace life's adventures.</h1>
+        <div className='hero-div' />
         <p className='hero-subtitle'>
           With myofascial Release Registered Massage Therapy
         </p>

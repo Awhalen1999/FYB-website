@@ -6,21 +6,14 @@
   position: relative;
 }
 
-.cta-logo {
-  position: absolute;
-  top: 25px;
-  left: 20px;
-  height: 100px;
-}
-
 .cta-text {
   position: absolute;
   bottom: 15px;
   left: 20px;
   width: 100%;
   font-family: var(--font-family-h);
-  color: #f5f5dc;
-  font-size: 3.5rem;
+  color: var(--secondary-text-color);
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0;
 }
