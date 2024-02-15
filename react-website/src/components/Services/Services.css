@@ -13,8 +13,7 @@
 }
 
 .services h1 {
-  margin-bottom: 0px;
-  margin-top: 40px;
+  margin: 40px 0 0;
   font-family: var(--font-family-h);
 }
 
@@ -39,7 +38,6 @@
   position: relative;
   overflow: hidden;
   background: var(--primary-background-color);
-  position: relative;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
@@ -47,7 +45,6 @@
 }
 
 .service-card:hover {
-  /* Add hover shadow and scale effect */
   box-shadow: rgba(51, 156, 255, 0.35) -10px 10px,
     rgba(51, 156, 255, 0.25) -20px 20px;
   transform: scale(1.1);
@@ -87,7 +84,6 @@
   width: 75%;
   height: 4px;
   background-color: var(--primary-color);
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   border-radius: 10px;
 }

@@ -12,13 +12,17 @@
   font-weight: 500;
 }
 
+.content-main,
+.content-section p {
+  font-family: var(--font-family-p);
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+}
+
 .content-main {
   text-align: center;
   margin-bottom: 20px;
-  font-family: var(--font-family-p);
-  line-height: 1.5;
   font-size: 1.1rem;
-  color: var(--secondary-text-color);
 }
 
 .sections-wrapper {
@@ -41,7 +45,6 @@
 
 .content-section p {
   margin: 0;
-  color: var(--secondary-text-color);
 }
 
 .icon-wrapper {
