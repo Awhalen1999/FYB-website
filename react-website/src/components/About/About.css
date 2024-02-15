@@ -76,7 +76,6 @@
 
 .about-button:hover {
   background-color: var(--button-hover-color);
-  color: var(--primary-text-color);
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }

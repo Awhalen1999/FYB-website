@@ -73,7 +73,7 @@ body.loaded .hero-content {
 .hero-button-2 {
   border: 2px solid var(--button-color);
   background-color: transparent;
-  color: var(--primary-text-color);
+  color: var(--button-text-color);
 }
 
 .hero-button-2:hover {

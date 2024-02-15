@@ -5,19 +5,17 @@
 
 :root {
   --primary-background-color: #faf9f6;
-  --secondary-background-color: #2998d2;
+  --secondary-background-color: #2190aa;
   --tertiary-background-color: #8e8e8e;
   --primary-text-color: #333333;
   --secondary-text-color: #faf9f6;
   --tertiary-text-color: #339cff;
-  --hover-color: #288bd7;
-  --button-color: #339cff;
-  --button-hover-color: #288bd7;
-  --button-text-color: #000000;
-  --highlight-color: rgb(252, 252, 56);
-  --primary-color: #70b445ff;
-  --secondary-color: #339cff;
-  --tertiary-color: #487c97ff;
+  --hover-color: #1c7f95;
+  --button-color: #2190aa;
+  --button-hover-color: #1c7f95;
+  --button-text-color: black;
+  --primary-color: #70b445;
+  --secondary-color: #2190aa;
   --font-family-h: 'Lexend Deca', Arial, sans-serif;
   --font-family-p: 'Poppins', Arial, sans-serif;
   --box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
